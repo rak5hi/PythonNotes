@@ -62,7 +62,7 @@ def floating():
 def func():
     x=2.6
     y=-3
-    print(abs(x))     #absolute function
+    print(abs(x))     #absolute function..
     print(abs(y))     #....3
     print(round(x))   #rounding to nearest integer.....3....for(2.5---2)
     print(round(y))   #...-3
@@ -73,5 +73,4 @@ def maths():
     print(math.pi)
     print(math.sqrt(64))
     print(math.ceil(2.6))    #......3
-    print(math.floor(2.6))   #......2
-
+    print(math.floor(2.6))   #......
