@@ -73,4 +73,4 @@ def maths():
     print(math.pi)
     print(math.sqrt(64))
     print(math.ceil(2.6))    #......3
-    print(math.floor(2.6))   #......
+    print(math.floor(2.6))   #......2
