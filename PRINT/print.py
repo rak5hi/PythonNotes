@@ -8,19 +8,8 @@ def multiline():
     print(len(singleline))
     print(len(multiline))
 
-#################
-
-def fullname(first="rakshith",last="gowda",initial="v"):
-    fullName=first+last+initial
-    print(fullName)
-    
-    fullName=first+" "+last+" "+initial
-    print(fullName)
-    
-    fullName=first.title()+" "+last.title()+" "+initial.title()
-    print(fullName)
-    
 ##################
+
 
 def esc_n():
 #...print('It's Boring')-----ERROR
@@ -29,4 +18,4 @@ def esc_n():
     print('\\n')
     
     
-esc_n()
+multiline()
