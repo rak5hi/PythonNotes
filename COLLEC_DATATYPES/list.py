@@ -1,3 +1,5 @@
+#################################################
+
 def _list():
     
     _list = ["rakshi",7,True]
@@ -14,42 +16,116 @@ def _list():
     
     print(len(_list))
     
+#################################################
+    
 def add():
     
-    data = ['a','b','c','d']
-    space = "\n"
+    data = ['a','b','c']
+    n = "\n"
     
-    data += [0]
+    data += ['d']
+    print(data,n,n)
+    
+    #insert in b/w
+    data[1:1] = [0]           
     print(data)
     
+    data[1:1] = [1,2,3]     
+    print(data,n,n,n)
+    
+    #replaceing 
+    data[1:4] = ['&']            
+    print(data)
+    
+    data[0:3] = ['*','*','*','*'] 
+    print(data,n,n)
+    
+    data[1:] = [0]
+    print(data)
+    
+    data[:1]=['a','b','c','d']
+    print(data)
+
+#################################################
+
+def listfunc():
+    data = ['a','b','c']
+    
+    data.append('d')
+    print(data) 
+    
+    data.extend([0,"*",1])        #takes list/itsName as argument
+    print(data)    
+                  
+    data.insert(2,'*')
+    print(data)
+    
+
     print(data.pop())
-    print(data.pop())
-    print(data,space,space,space)
+    print(data)
+    
+    data.remove('*')              #not remove multiple identical element 
+    print(data)
     
     
-    data[1:1] = [0]            #insert in b/w 
-    print(data,space)
+    del data[4]
+    print(data)
+    del data[3:]
+    print(data)
     
-    data[1:2] = ["x"]          #replace
-    print(data,space)
+    data.clear()
+    print(data)
     
-    data[1:3] = [0]            #replace
-    print(data,space)
+    del data                     #dlt list
     
-    data[0:]=[0]               #replace
-    print(data,space)
+ #################################################   
+
+def _sort():
+    nums = [0,3,1,2]
+    names = ["Siri","rakshi"]
+    data = [1,"rakshi",False]
+
+    names[1:1] = 'aA'          # == ['a','A']
+    print(names)
     
-    data[0:0] = ['a','b','c','d']     #insert in b/w
-    print(data,space,space,space,space)
+    nums.sort()
+    names.sort()
+    #data.sort()----ERROR
+    print(nums)
+    print(names)
     
+    print(" ")
+
+    names.sort(key=str.lower)
+    # names.sort(key=str.upper)
+    print(names)
+
+    print(" ")
     
-    data[1:3] = [1,2,3] 
-    print(data,space)
-    data[1:3] = [0] 
-    print(data,space)
-    data[0:3] = [0] 
-    print(data,space)
+    nums.reverse()
+    # nums.sort(reverse=True)
+    # print(sorted(nums,reverse=True))
+    print(nums)
+
+    print(" ")
+
+    numscopy=nums.copy()
+    # numscopy=list(nums)
+    # numscopy=nums[:]
+    print(numscopy)
+
+
+def listcopy():
+    nums=[1,2,3]
     
-    data[:1]=['a','b','c']
-    print(data,space)
-add()
+    numscopy=nums.copy()
+    # numscopy=list(nums)
+    # numscopy=nums[:]
+    print(numscopy)
+    
+    mylist=list([1,2,3])
+    print(mylist)
+    
+    # x=nums---x&nums refer to same point
+    
+listcopy()
