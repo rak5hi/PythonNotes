@@ -56,8 +56,7 @@ def for_range():
         print(x)
               
 #for_range()
-
-
+####################################################
 def for_else():
     
     for x in range(1,5):
@@ -65,8 +64,11 @@ def for_else():
     else:
         print(5)
         
-    print("")
-     
+for_else()
+####################################################
+
+def for_else_break():
+    
     for x in range(1,5):
         print(x)
         if x == 3:
@@ -74,14 +76,15 @@ def for_else():
     else:
         print(5)
         
-        
-    print("")
+####################################################
+
+def for_else_continue():
+         
     for x in range(1,5):
         if x == 3:
             continue
         print(x)
     else:
         print(5)
-
-
-for_else()
+        
+####################################################
