@@ -1,3 +1,5 @@
+####################################################
+
 def syn():
     
     i = 1
@@ -7,9 +9,9 @@ def syn():
         
     print("\n\n")
     
-    
-syn()        
-        
+#syn()        
+####################################################
+  
 def cond():
     
     count = 1
@@ -22,9 +24,9 @@ def cond():
         count += 1
       
     print("\n\n")
-       
-        
-cond()
+              
+#cond()
+####################################################
 
 def while_else():
     
@@ -37,9 +39,9 @@ def while_else():
         
         
     print("\n\n")
-      
-        
-while_else()
+             
+#while_else()
+####################################################
 
 def while_else2():
     
@@ -56,7 +58,8 @@ def while_else2():
         
     print("\n\n")
     
-while_else2()
+#while_else2()
+####################################################
 
 def while_else3():
     
@@ -73,4 +76,29 @@ def while_else3():
         
     print("\n\n")
     
-while_else3()
+#while_else3()
+####################################################
+
+
+def p():
+    print('syn')
+    syn() 
+    print("\n\n\n")
+    
+    print('cond')
+    cond()
+    print("\n\n\n")
+    
+    print("while else")
+    while_else()
+    print("\n\n\n")
+    
+    print("while else2")
+    while_else2()
+    print("\n\n\n")
+    
+    print("while else3")
+    while_else3()
+    
+    
+p()

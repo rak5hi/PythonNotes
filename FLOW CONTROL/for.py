@@ -17,7 +17,8 @@ def syn2():
     #for only_variable in nums:
     for x in nums:
         print (x)
-            
+ 
+#syn2()           
 ####################################################
       
 def syn3():
@@ -38,8 +39,8 @@ def syn3():
         
         
 #syn3()
-
 ####################################################
+
 def for_range():
     
     for x in range(3):
@@ -57,6 +58,7 @@ def for_range():
               
 #for_range()
 ####################################################
+
 def for_else():
     
     for x in range(1,5):
@@ -64,27 +66,29 @@ def for_else():
     else:
         print(5)
         
-for_else()
+#for_else()
 ####################################################
 
 def for_else_break():
     
     for x in range(1,5):
         print(x)
-        if x == 3:
+        if x == 4:
             break
     else:
         print(5)
-        
+ 
+for_else_break()       
 ####################################################
 
 def for_else_continue():
          
     for x in range(1,5):
-        if x == 3:
+        if x == 4:
             continue
         print(x)
     else:
         print(5)
-        
+ 
+for_else_continue()      
 ####################################################
