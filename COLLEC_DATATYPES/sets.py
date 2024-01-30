@@ -15,7 +15,7 @@ def _sets():
     
     print("\n\n")
    
-_sets()
+#_sets()
 ###############################################
 
 def copy():
@@ -29,7 +29,7 @@ def copy():
  
     print("\n\n")
     
-copy()
+#copy()
 ###############################################
 
 def add():
@@ -48,7 +48,7 @@ def add():
     print("\n\n")
     
 
-add()
+#add()
 ###############################################
 
 def oper():
@@ -70,4 +70,16 @@ def oper():
     d.symmetric_difference_update(b)
     print(d)
     
-oper() 
+#oper() 
+
+###############################################
+
+def froz():
+    
+   a = frozenset({1,2,3,4,5})
+   
+   a.add(4)    #---ERROR
+   
+   print(5)
+
+froz()
