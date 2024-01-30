@@ -35,7 +35,7 @@ def sum2(num1=0, num2=0):
 def multi_values(*args):
 #def multi_values(*x):
     print(args)
-    print(type(args))
+    print(type(args))  #--tuple
     
 #multi_values('a',1,True)
 ####################################################
@@ -45,6 +45,7 @@ def multi_items(**kwargs):
     print(type(kwargs))
     
 #multi_items(key1= "rakshi", key2= "siri")
+  #key1--no quotation
 ####################################################
 
 def func_print():
@@ -76,6 +77,7 @@ def place_holder():
     #to do things--
     pass
 
+####################################################
 
 def pos_key(par1: str, par2: str = "Rakshi"):
     print(f'{par1}, {par2}')
@@ -85,5 +87,28 @@ def pos_key(par1: str, par2: str = "Rakshi"):
 ##pos_key(par2 = 'siri', Hello) ---- ERROR--using position
 ## argument after keyworg argument
 
-def sum_num(a: int, b: int) :
-    pass
+####################################################
+
+def pas_only_arg(arg, arg2, /):
+    print(arg, arg2)
+    
+def kwd_only_arg(*, arg, arg2):
+    print(arg)
+
+def combined_ex(pos_only, pos_only2, /, standard, standard2, *, kwd_only):
+    print(pos_only, pos_only2, standard, standard2, kwd_only)
+    
+pas_only_arg(1,2)
+#pas_only_arg(1, arg2=2)---ERROR
+
+kwd_only_arg(arg = 1, arg2 = 2)
+#kwd_only_arg(1, 2)----ERROR
+
+combined_ex(1, 2, 3, standard2 = 4, kwd_only = 5)
+
+####################################################
+def kwd_only_arg2(*arg, key):
+    print(arg, key)
+    
+kwd_only_arg2(1, 2, 3, 4, key = 33)
+####################################################
