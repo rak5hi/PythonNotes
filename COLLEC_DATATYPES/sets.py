@@ -80,6 +80,5 @@ def froz():
    
    a.add(4)    #---ERROR
    
-   print(5)
 
-froz()
+#froz()
