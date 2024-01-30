@@ -69,7 +69,21 @@ def func_print():
     print("multi_items--")
     multi_items(key1= "rakshi", key2= "siri")
     
-func_print()
+#func_print()
 ####################################################
 
-    
+def place_holder():
+    #to do things--
+    pass
+
+
+def pos_key(par1: str, par2: str = "Rakshi"):
+    print(f'{par1}, {par2}')
+  
+#pos_key('Hello', par2 = 'siri')
+  
+##pos_key(par2 = 'siri', Hello) ---- ERROR--using position
+## argument after keyworg argument
+
+def sum_num(a: int, b: int) :
+    pass

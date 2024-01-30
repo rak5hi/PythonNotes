@@ -88,3 +88,9 @@ def t_mod2():
     
 #t_mod2()
 ################################################
+def ext():
+    people = "siri", #() do not make it tuple
+    people2 = ("siri")
+    print(type(people) ,type(people2))
+    
+#ext()

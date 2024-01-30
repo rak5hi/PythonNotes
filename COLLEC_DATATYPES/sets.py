@@ -1,3 +1,4 @@
+#extremely memory efficient bcz of no order(index)
 ###############################################
 
 def _sets():
@@ -43,6 +44,9 @@ def add():
     # num2 = [4, 5, 6]
     
     num1.update(num2)
+    #num1.update({4, 5, 6})
+    #num1.update((4, 5, 6))
+    #num1.update([4, 5, 6])
     print(num1)
     
     print("\n\n")
@@ -58,7 +62,9 @@ def oper():
     d = set(a)
     
     aub = a.union(b)
-    #u = b.union(a)
+    #aub = b.union(a)
+    #aub = a | b        #---bitwise or operator
+    #a |= b
     print(aub)
     
     anb = a.intersection(b)
@@ -80,5 +86,33 @@ def froz():
    
    a.add(4)    #---ERROR
    
-
 #froz()
+
+def ext():
+    items = {'apple', 'bannana',10,2,True}
+    
+    items.remove(2)
+    print(items)
+    
+    items.discard(10)
+    print(items)
+    
+    #items.remove('ashgs')  #---throw ERROR
+    items.discard('jkhfjd') #---DON'T throw ERROR
+    
+    items.pop()   #==remove randomly
+    print(items)
+    
+    items.clear()
+    print(items)
+#ext()
+
+def emptyset():
+    
+    a = {}
+    print(type(a))
+    
+    b = set()
+    print(type(b))
+    
+emptyset()

@@ -35,7 +35,9 @@ def boolean():
     y=True
     print(f'{x}\n{y}')
     print(isinstance(x,bool))
+    print(true == 2)
     
+boolean()
 #####################################################
 
 def integer():

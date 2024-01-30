@@ -1,3 +1,5 @@
+#for loop is used if we know no of iteration 
+#while loop is used otherwise-user dependent
 ####################################################
 def syn():
     

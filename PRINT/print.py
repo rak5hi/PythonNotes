@@ -18,4 +18,11 @@ def esc_n():
     print('\\n')
     
     
-multiline()
+#multiline()
+
+def end():
+    for i in range(5):
+        #by default-- print(i, end='/n')
+        print(i, end=' ')
+        
+end()

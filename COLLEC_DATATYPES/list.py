@@ -128,4 +128,12 @@ def listcopy():
     
     # x=nums---x&nums refer to same point
     
-listcopy()
+#listcopy()
+
+def ext():
+    
+    people: list[str] = ["Rakshi","siri"]
+    print("siri" in people)
+    people.pop(0)
+    print(people)
+ext()

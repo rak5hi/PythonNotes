@@ -20,7 +20,8 @@ print("{key1} is a {key2} language.\n".format(**_dict))
 
 #f-string
 
-print(f"{py} is a {oops} language.\n")
+f_string = f'{py} is a {oops} language.\n'
+print(f_string)
 
 print(f"{py} is a {oops.title()} language.\n")
 

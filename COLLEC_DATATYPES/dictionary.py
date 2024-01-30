@@ -1,7 +1,8 @@
 
 def _dict():
 
-    _dict = { "key1": "value1", "key2": "value2"}
+    _dict = { "key1": "value1",
+             "key2": "value2"}
     print(_dict)
 
     _dict1 = dict(key1="value1",key2="value2")
@@ -12,10 +13,12 @@ def _dict():
 
 def access_item():
     
-    _dict = { "key1": "value1", "key2": "value2"}
+    _dict = { "key1": "value1",
+             "key2": "value2"}
     
     print(_dict["key1"])
     print(_dict.get("key1"))
+    #print(_dict.get('x')) ----output--NONE
     print(" ")
     
     print(_dict.keys())
@@ -31,7 +34,8 @@ def access_item():
     
 def oper():
     
-    _dict = { "key1": "value1", "key2": "value2"}
+    _dict = { "key1": "value1", 
+             "key2": "value2"}
    
     n = "\n"
     _dict["key1"] = 'a'
@@ -52,7 +56,8 @@ def oper():
 
 def dlt():
     
-    _dict = { "key1": "value1", "key2": "value2"}
+    _dict = { "key1": "value1", 
+              "key2": "value2" }
     print(_dict)
     
     del _dict["key2"]
@@ -62,10 +67,11 @@ def dlt():
     print(_dict)
     
     del _dict
-    
+#dlt()  
 def copy():
     
-    dict1 = { "key1": "value1", "key2": "value2"}
+    dict1 = { "key1": "value1", 
+             "key2": "value2"}
    
     #dict2 = dict1 ----both point to same value
     
@@ -76,15 +82,43 @@ def copy():
     
 def nest():
     
-    person = { "name": "rakshi", "iq": "low"}
+    person = {"name": "rakshi",
+              "iq": "low"}
     
-    pet = { "name": "siri", "iq": "very low"}
+    pet = {"name": "siri", 
+           "iq": "very low"}
     
-    home = { "member1": person, "member2": pet}
+    home = {"member1": person,
+            "member2": pet}
     
     print(home)
     print("")
     print(home["member1"]["name"])
     
+    users = {'user1': 'rakshi',
+             'user2': 'siri',
+             'items': {'apple': 10,
+                       'bannana': 20}}
     
-nest()
+    print(users['items']['apple'])
+    
+#nest()
+
+def ext():
+    
+    dict1 = {"key1": "value1", 
+             "key2": "value2"}
+    
+    print(dict1.setdefault('key1', 'there is no such key'))
+    print(dict1.setdefault('x', 'there is no such key'))
+     #print(dict1['x'])  ---ERROR
+     
+    x = dict1.values()
+    print(x)  
+    
+    y = list(dict1.values())
+    #y = tuple(dict1.values()) ---to make output readable
+    
+    print(y)  
+    
+ext()
