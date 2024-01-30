@@ -36,7 +36,7 @@ def boolean():
     print(f'{x}\n{y}')
     print(isinstance(x,bool))
     
-
+#####################################################
 
 def integer():
     x=5        #...x=int("hdghs")-------ERROR  
@@ -74,3 +74,11 @@ def maths():
     print(math.sqrt(64))
     print(math.ceil(2.6))    #......3
     print(math.floor(2.6))   #......2
+
+
+#####################################################
+
+def type_hint():
+    name: str = "Rakshi"
+    number: int = 2
+    
