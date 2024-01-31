@@ -1,3 +1,5 @@
+####################################################
+
 def using_loop():
     sample_list = []
     sample_list2 = []
@@ -12,6 +14,9 @@ def using_loop():
     print(sample_list)
     print(sample_list2, end='\n\n\n')
 
+#using_loop()
+####################################################
+
 def list_comprehension():
     
     # [reuslt for element in list]
@@ -22,7 +27,10 @@ def list_comprehension():
     
     print(sample_list)
     print(sample_list2)
-    
+
+#list_comprehension()  
+####################################################
+  
 def list_comprehension2():
     
     people: list[str] = ['Rakshi','Siri','Yashu']
@@ -32,6 +40,7 @@ def list_comprehension2():
     print(cap_people)
     
 #list_comprehension2()
+####################################################
 
 def double_slice():
     
@@ -45,6 +54,7 @@ def double_slice():
     print(numbers[:10] + numbers[10:])
     
 #double_slice()
+####################################################
 
 def modify_in_loop():
     
@@ -63,6 +73,7 @@ def modify_in_loop():
     print("\n\n")
         
 #modify_in_loop()
+####################################################
 
 def modify_in_loop2():
     
@@ -86,4 +97,5 @@ def modify_in_loop2():
 #  NEVER TRY TO change or edit the current loop 
 #  that iteratung through bcz it will lead to 
 #  unintended side effects.
+####################################################
 
