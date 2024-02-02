@@ -8,8 +8,7 @@ def multiline():
     print(len(singleline))
     print(len(multiline))
 
-##################
-
+####################################################
 
 def esc_n():
 #...print('It's Boring')-----ERROR
@@ -19,10 +18,23 @@ def esc_n():
     
     
 #multiline()
+####################################################
 
 def end():
     for i in range(5):
         #by default-- print(i, end='/n')
         print(i, end=' ')
         
-end()
+#end()
+####################################################
+
+
+print('Hey', 0, 'Siri', end='\n  *** \n')
+
+print('Hey', 0, 'Siri', sep=':')
+
+
+
+#By Default:
+#           sep=' '   -->  whitespace
+#           end='\n'  -->  newline
