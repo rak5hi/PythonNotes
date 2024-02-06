@@ -1,0 +1,8 @@
+{
+    "person": {
+        "name": "Siri",
+        "height": 30,
+        "weight": 10,
+        "single": false
+    }
+}
