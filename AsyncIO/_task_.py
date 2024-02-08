@@ -34,7 +34,7 @@ task are non blocking"""
 
 async def main2():
     task = asyncio.create_task(fetch_data(1))
-    await asyncio.sleep(0.1)
+    await asyncio.sleep(2)
     
     if task.done():
         data: dict = task.result()
