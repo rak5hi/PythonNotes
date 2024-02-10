@@ -31,3 +31,5 @@ print(f'Time count: {end-start}')
 # with thread, output = 5.7 sec
 
 """ thread is usefull for optimization when there is sleep()/IO/API """
+
+""" This is where Multiprocess comes in"""
